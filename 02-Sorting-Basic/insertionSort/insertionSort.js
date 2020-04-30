@@ -1,4 +1,4 @@
-const {generateRandomArray, testSort, generateNearlyOrderedArray} = require('./SortTestHelper')
+// const {generateRandomArray, testSort, generateNearlyOrderedArray} = require('./SortTestHelper')
 
 
   function insertionSort(arr) {
@@ -17,9 +17,9 @@ const {generateRandomArray, testSort, generateNearlyOrderedArray} = require('./S
       arr[j] = e
     }
   }
-
-let n = 100000;
-const arr = generateRandomArray(n,0,n)
-const arr2 = generateNearlyOrderedArray(n, 200)
-testSort(insertionSort, arr)
-testSort(insertionSort, arr2)
+module.exports = insertionSort
+// let n = 100000;
+// const arr = generateRandomArray(n,0,n)
+// const arr2 = generateNearlyOrderedArray(n, 200)
+// testSort(insertionSort, arr)
+// testSort(insertionSort, arr2)

@@ -1,0 +1,3 @@
+## learn algorithm
+
+### use javaScript
