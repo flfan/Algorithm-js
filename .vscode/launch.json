@@ -7,6 +7,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Launch current file",
+      "program": "${file}",
+      "cwd": "${cwd}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch Program",
       "skipFiles": [
         "<node_internals>/**"

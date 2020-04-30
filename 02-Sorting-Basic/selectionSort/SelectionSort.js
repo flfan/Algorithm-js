@@ -1,8 +1,6 @@
 const { generateRandomArray, testSort } = require("./SortTestHelper");
 
-let arr = generateRandomArray(1000, 0, 10000);
-
-function sort(arr) {
+function selectionSort(arr) {
   const n = arr.length;
   for (let i = 0; i < n; i++) {
     let minIndex = i;
@@ -20,5 +18,6 @@ function swap(arr, i, j) {
   arr[i] = arr[j];
   arr[j] = temp;
 }
-sort.
-testSort(sort, arr)
+
+let arr = generateRandomArray(1000, 0, 10000);
+testSort(selectionSort, arr)
