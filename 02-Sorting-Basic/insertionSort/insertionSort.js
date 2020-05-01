@@ -17,6 +17,21 @@
       arr[j] = e
     }
   }
+
+  function insertionSort2(arr, l, r){
+    for(let i = l; i <= r; i++) {
+      let e = arr[i]
+      let j = i
+      for(;j > 0; j--){
+        if(arr[j - 1] > e){
+          arr[j] = arr[j - 1]
+        }else{
+          break
+        }
+      }
+      arr[j] = e
+    } 
+  }
 module.exports = insertionSort
 // let n = 100000;
 // const arr = generateRandomArray(n,0,n)
